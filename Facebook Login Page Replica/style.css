@@ -1,0 +1,179 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body 
+{ height:100%; font-family: Helvetica, Arial, sans-serif;}
+body 
+{ background:#122950;
+  display:grid;
+  place-items:center;
+  min-height:100vh;
+  position:relative;
+  overflow:hidden;}
+.circle 
+{ position:absolute;
+  border-radius:50%;
+  background:#1c3766;}
+.circle.tl { width:180px; height:180px; top:-70px; left:-40px; }
+.circle.br { width:180px; height:180px; bottom:-70px; right:-40px; }
+.page 
+{ width:760px;
+  max-width:95vw;
+  background:#fff;
+  border-radius:3px;
+  overflow:hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,.4);
+  z-index:1;
+  display:grid;
+  grid-template-rows: auto 1fr;}
+.header 
+{ background:#3b5998;
+  padding:14px 24px;
+  display:grid;
+  grid-template-columns: 1fr auto auto auto;
+  align-items:end;
+  column-gap:14px;}
+.logo 
+{ color:#fff;
+  font-size:32px;
+  font-weight:700;
+  font-style:normal;
+  font-family: Arial, Helvetica, sans-serif;
+  align-self:center;}
+.field-group 
+{ display:grid;
+  row-gap:2px;
+  font-size:11px;
+  color:#fff;}
+.field-group input 
+{ height:20px;
+  border:1px solid #1a2b47;
+  border-radius:2px;
+  padding:2px 4px;
+  font-size:12px;
+  width:150px;}
+.login-btn 
+{ align-self:center;
+  background: linear-gradient(#4c69ba,#3b5998);
+  border:1px solid #29447e;
+  color:#fff;
+  font-weight:bold;
+  font-size:13px;
+  border-radius:3px;
+  padding:5px 16px;
+  cursor:pointer;
+  height:28px;}
+.login-btn:hover { background: linear-gradient(#5b7bd5,#4c69ba); }
+.forgot 
+{ grid-column: 2 / 4;
+  justify-self:end;
+  font-size:11px;
+  margin-top:2px;}
+.forgot a { color:#fff; text-decoration:none; }
+.forgot a:hover { text-decoration:underline; }
+.body 
+{ padding:30px 30px 20px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap:30px;}
+.left h1 
+{ font-size:15px;
+  font-weight:700;
+  color:#264a7d;
+  margin-bottom:20px;
+  line-height:1.3;}
+.world-map 
+{ width:100%;
+  max-width:340px;
+  height:auto;
+  display:block;
+  margin-top:10px;}
+.right h2 
+{ font-size:28px;
+  font-weight:700;
+  color:#1c1e21;}
+.right .subtitle 
+{ font-size:16px;
+  font-weight:400;
+  color:#65676b;
+  margin:6px 0 16px;}
+.signup-form 
+{ display:grid;
+  row-gap:8px;}
+.name-row 
+{ display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap:8px;}
+.signup-form input[type="text"],
+.signup-form input[type="password"] 
+{ height:34px;
+  border:1px solid #ccd0d5;
+  border-radius:3px;
+  padding:0 8px;
+  font-size:14px;
+  width:100%;}
+.birthday-label, .gender-label 
+{ font-size:12px;
+  font-weight:400;
+  color:#606770;
+  margin-top:6px;}
+.birthday-row 
+{ display:grid;
+  grid-template-columns: 70px 90px 70px 20px;
+  column-gap:6px;
+  align-items:center;}
+.birthday-row select 
+{ height:30px;
+  border:1px solid #ccd0d5;
+  border-radius:3px;
+  font-size:13px;}
+.help-icon 
+{ width:16px; height:16px;
+  border-radius:50%;
+  background:#dfe3ee;
+  color:#606770;
+  font-size:11px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;}
+.gender-row 
+{ display:grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  align-items:center;
+  font-size:13px;
+  font-weight:700;
+  color:#1c1e21;
+  column-gap:4px;}
+.gender-row label 
+{ display:flex; align-items:center; gap:4px;}
+.terms 
+{ font-size:11px;
+  color:#777;
+  margin-top:10px;
+  line-height:1.4;}
+.terms a { color:#365899; text-decoration:none; }
+.terms a:hover { text-decoration:underline; }
+.signup-btn 
+{ margin-top:12px;
+  background: linear-gradient(#67ae3f,#4b7f27);
+  border:1px solid #3b6e22;
+  color:#fff;
+  font-weight:bold;
+  font-size:18px;
+  border-radius:4px;
+  padding:10px 0;
+  width:220px;
+  cursor:pointer;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.3);}
+.signup-btn:hover { background: linear-gradient(#75bb4d,#5a8f34); }
+.create-page 
+{ font-size:12px;
+  font-weight:400;
+  color:#000;
+  text-align:center;
+  margin-top:14px;}
+.create-page a 
+{ color:#365899;
+  font-weight:400;
+  text-decoration:none;
+  cursor:pointer;}
+.create-page a:hover { text-decoration:underline; }
